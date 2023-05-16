@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block content %}
+<div class="text-center">
+  {% if Class %}
+  <h1>これは {{ Class }} です</h1>
+  <div>
+    <img src="data:image/png;base64,{{ data }}" />
+  </div>
+  <h5 class="m-3"><a href="./">トップへ戻る</a></h5>
+  {% else %}
+  <h5 class="m-3"><a href="./">トップへ戻る</a></h5>
+  {% endif %}
+</div>
+
+{% endblock %}
